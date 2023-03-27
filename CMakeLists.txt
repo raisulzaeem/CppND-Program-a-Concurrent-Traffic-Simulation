@@ -1,10 +1,10 @@
-cmake_minimum_required(VERSION 3.11.3)
+cmake_minimum_required(VERSION 3.13)
 
 # set(CMAKE_CXX_STANDARD 17)
 project(traffic_simulation)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -pthread")
 
-find_package(OpenCV 4.1 REQUIRED)
+find_package(OpenCV REQUIRED PATHS "C:\\Users\\rislam\\Downloads\\opencv\\build\\x64\\vc15\\lib")
 
 include_directories(${OpenCV_INCLUDE_DIRS})
 link_directories(${OpenCV_LIBRARY_DIRS})
